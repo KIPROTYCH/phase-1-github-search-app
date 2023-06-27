@@ -1,13 +1,69 @@
+* {
+  background: whitesmoke;
+  
+}
+
 #main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: center;max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#main h2{
+  font-size: 2rem;
+
 }
 
 #github-container {
-  display: flex;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); */
+  gap: 2px;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#github-form input[type="text"]{
+  padding: 10px;
+  border-radius: 1rem;
+  margin-right: 10px;
+  font-size: 1rem;
+  width: 300px;
+}
+
+#github-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#user-list li {
+  display: flex;
+  flex-wrap: ;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#user-list li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#user-list li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }

@@ -27,9 +27,9 @@ function searchUsers(username) {
         .then(data => {
             let users = data.items;
             if (users.length === 0) {
-                displayNotFound();
+                displayNotFound(); // Call the displayNotFound function if no users found
             } else {
-                displayUsers(users);
+                displayUsers(users); // Call the displayUsers function to display the search results
             }
         })
         .catch(error => {
